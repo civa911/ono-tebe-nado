@@ -1,1 +1,36 @@
 /* место для вашего кода */
+body {
+
+}
+
+header {
+
+  
+  padding: 92px 49px 92px 51px;
+  
+}
+
+.header__menu{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.header__link{
+  display: flex;
+  align-items: center;
+  padding: 43px 0 43px 0;
+  
+}
+.header__link_active {
+  
+  line-height: normal;
+}
+
+.header__links-list, .header__address {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 18px;
+  
+}
