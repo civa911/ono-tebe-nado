@@ -1,35 +1,66 @@
 /* место для вашего кода */
 body {
-
+  display: flex;
+  justify-content: center;
 }
-
 header {
-
-  
-  padding: 92px 49px 92px 51px;
-  
+  width: 1440px;
+  height: 293px;
+  background-color: bisque;   
 }
 
-.header__menu{
+.header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 92px 52px 92px 51px;
+}
+.header__links-list {
+  display: flex;
+  gap: 33px;
+  list-style-type: circle;
+}
+.header__menu {
   
 }
-
-.header__link{
-  display: flex;
-  align-items: center;
-  padding: 43px 0 43px 0;
-  
+.header__links-list-item{
+ 
 }
 .header__link_active {
+  border-bottom: 1px #131313 solid;
   
-  line-height: normal;
+  text-decoration-line:none ;
 }
-
+.header__address__link_active{
+  border-bottom: 1px #131313 solid;
+  text-decoration-line:none ;
+}
+.header__address-list{
+  list-style-type: none;
+  
+}
 .header__links-list, .header__address {
   font-family: Raleway;
   font-weight: normal;
   font-size: 18px;
   
+}
+.header__links-list-item_no-bullit {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  line-height: 24.3px;
+  list-style-type: none;
+}
+.header__logo {
+  padding: 0 255px 0 107px;
+}
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+ 
 }
