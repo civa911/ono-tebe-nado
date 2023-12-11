@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header content-section">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
@@ -33,11 +33,9 @@
           </li>
         </ul>
       </nav>
-
       <a class="header__logo">
         <img src="images/logo-black.svg" alt="" class="header__logo-image" />
       </a>
-
       <address class="header__address">
         <ul class="header__address-list">
           <li class="header__address-links">
@@ -53,26 +51,64 @@
         </p>
       </address>
     </header>
-
-    <!-- <main>
+    <main class="content-section">
       <section class="cover"></section>
       <section class="lots"></section>
       <section class="about"></section>
-    </main> -->
-    <!-- <footer class="footer">
-      <address class="">
-        <a href="tel:+70000000">+9 999 555 5555</a>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
+    </main>
+    <footer class="footer content-section"> 
+      <address class="header__address">
+        <ul class="header__address-list">
+          <li class="header__address-links">
+            <a class="header__address__link_active" href="tel:+70000000">+9 999 555 5555</a>
+          </li>
+          <li class="header__address-links">
+            <a class="header__address__link_active" href="mailto:mail@example.com">info@sobaka.ge</a>
+          </li>
+        </ul>
+        <p>
+          наб. Принсенграхт 263-265,<br />
+          Амстердам
+        </p>
       </address>
-      <nav class="">
-        <a class="" href="#">главная</a>
-        <a class="" href="#">посмотреть лоты</a>
-        <a class="" href="#">об аукционе</a>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link " href="#">
+              главная
+            </a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link footer__menu-link_active" href="#">
+              посмотреть лоты
+            </a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link footer__menu-link_active" href="#">
+              об аукционе
+            </a>
+          </li>
+        </ul>
       </nav>
-      <img src="images/yt.svg" alt="" class="">
-      <img src="images/vk.svg" alt="" class="">
-      <img src="images/pinterest.svg" alt="" class="">
-    </footer> -->
+
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img src="images/yt.svg" alt="logo_yt" class="footer__social-icon">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img src="images/vk.svg" alt="logo_vk" class="footer__social-icon">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img src="images/pinterest.svg" alt="logo_pinterest" class="footer__social-icon">
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

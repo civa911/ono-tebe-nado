@@ -1,15 +1,13 @@
-/* место для вашего кода */
 body {
-  display: flex;
-  justify-content: center;
 }
+/* начало header */
 header {
   width: 1440px;
   height: 293px;
-  background-color: bisque;   
-}
 
-.header{
+  
+}
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,29 +19,26 @@ header {
   list-style-type: circle;
 }
 .header__menu {
-  
+  text-align: center;
 }
-.header__links-list-item{
- 
+.header__links-list-item {
 }
 .header__link_active {
   border-bottom: 1px #131313 solid;
-  
-  text-decoration-line:none ;
+  text-decoration-line: none;
 }
-.header__address__link_active{
+.header__address__link_active {
   border-bottom: 1px #131313 solid;
-  text-decoration-line:none ;
+  text-decoration-line: none;
 }
-.header__address-list{
+.header__address-list {
   list-style-type: none;
-  
 }
-.header__links-list, .header__address {
+.header__links-list,
+.header__address {
   font-family: Raleway;
   font-weight: normal;
   font-size: 18px;
-  
 }
 .header__links-list-item_no-bullit {
   text-decoration: none;
@@ -62,5 +57,49 @@ header {
 .header__logo-image {
   width: 148px;
   height: 105px;
- 
 }
+/* конец header */
+
+.content-section {
+  box-sizing: border-box;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* начало footer */
+footer {
+  padding: 20px 50px 90px 50px;
+  
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 356px;
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  line-height: normal;
+}
+.footer__menu-link {
+  text-decoration: none;
+}
+.footer__menu-list,
+.footer__social-list-item {
+  list-style-type: none;
+}
+.footer__menu-link_active {
+  border-bottom: 1px #131313 solid;
+  text-decoration-line: none;
+}
+.footer__social-icon {
+  width: 48px;
+}
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+}
+/* конец footer */
