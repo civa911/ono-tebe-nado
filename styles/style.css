@@ -23,10 +23,7 @@ header {
 }
 .header__links-list-item {
 }
-.header__link_active {
-  border-bottom: 1px #131313 solid;
-  text-decoration-line: none;
-}
+.header__link_active,
 .header__address__link_active {
   border-bottom: 1px #131313 solid;
   text-decoration-line: none;
@@ -117,6 +114,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 173px 50px 135px 50px;
 }
 .overlay {
   position: absolute;
@@ -130,7 +128,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 165px 50px 135px 50px;
+  box-sizing: border-box;
   color: #FFF;
   font-family: Raleway;
   font-weight: bold;
@@ -139,32 +137,37 @@ footer {
   
 }
 .aligned-text {
-  /* letter-spacing: 30px; */
   display: flex;
-  justify-content: flex-start;
+  line-height: 100%;
+  justify-content: left;
+  letter-spacing: 30px;
 }
 .aligned-text_center {
   display: flex;
-  justify-content: center;
   line-height: 100%;
+  justify-content: center;
+  letter-spacing: 30px;
+  padding-top: 7px;
+  padding-right: 60px;
 }
 .aligned-text_right {
-  display: flex;
-  justify-content: flex-end;
   line-height: 100%;
+  display: flex;
+  justify-content: right;
 }
-.no-letter-spacing {
-  letter-spacing: 60px; 
-}
+.letter-spacing-extended {
 
+} 
+.no-letter-spacing {
+
+}
 .cover__description {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
-  padding-right: 50px;
+  padding-top: 135px;
 }
 .cover__description-text {
-  flex-direction: column;
   padding-right: 78px;
   color: #FFF;
   font-family: Raleway;
@@ -184,7 +187,13 @@ footer {
   font-family: Raleway;
   font-size: 22px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 /* конец cover */
+
+/* начало lots */
+
+
+
+/* конец lots */
