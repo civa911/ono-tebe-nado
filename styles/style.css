@@ -161,6 +161,7 @@ footer {
 }
 .no-letter-spacing {
 }
+
 .cover__description {
   display: flex;
   justify-content: flex-end;
@@ -200,18 +201,37 @@ footer {
   display: flex;
   justify-content: center;
   gap: 25px;
+  list-style-type: none;
+}
+.lots__heading {
+  font-family: Raleway;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 90px;
+  padding-bottom: 27px;
+  padding-top: 180px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
    padding-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 50px;
   width: 430px;
   height: 450px;
-  text-align: center;
+}
+.card_type_film, .card_type_book, .card_type_picture {
+  z-index: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .card_type_film {
+  
   background-image: url("/images/card-lot-01.jpg");
 }
 .card_type_book {
@@ -227,19 +247,35 @@ footer {
   font-size: 22px;
   text-decoration-line: none;
   text-transform: uppercase;
+  
 }
 .card-link {
-  
-  border-bottom: 2px #fff solid;
-  text-decoration-line: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  line-height: 120%;
 }
 .card__text {
   color: #fff;
   font-family: Raleway;
-  font-weight: 400;
+  
   font-size: 20px;
   font-style: normal;
   line-height: 120%; /* 24px */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
-
+.lots__card-list-item {
+  
+}
+.lots__look-more-link {
+  display:inline-block;
+  font-family: Raleway;
+  font-size: 20px;
+  padding-left: 90px;
+  padding-bottom: 180px;
+  padding-top: 30px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
 /* конец lots */
